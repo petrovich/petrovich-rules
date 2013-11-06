@@ -279,7 +279,7 @@ firstname:
       test: [я]
       mods: [-и, -е, -ю, -ей, -е]
 
-    - gender: man
+    - gender: male
       test: [ей]
       mods: [-я, -ю, -я, -ем, -е]
 
@@ -287,11 +287,11 @@ firstname:
       test: [ий]
       mods: [-я, -ю, -я, -ем, -и]
 
-    - gender: man
+    - gender: male
       test: [й]
       mods: [-я, -ю, -я, -ем, -е]
 
-    - gender: man
+    - gender: male
       test: [б, в, г, д, ж, з, к, л, м, н, п, р, с, т, ф, х, ц, ч]
       mods: [а, у, а, ом, е]
 
