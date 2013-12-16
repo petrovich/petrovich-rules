@@ -81,7 +81,7 @@ lastname:
       mods: [-ой, -ой, -ую, -ой, -ой]
 
     - gender: female
-      test: [ая]
+      test: [цкая, ная, ая]
       mods: [--ой, --ой, --ую, --ой, --ой]
 
     - gender: female
@@ -173,7 +173,11 @@ lastname:
       mods: [-я, -ю, -я, -ем, -е]
 
     - gender: male
-      test: [гой, кой]
+      test: [кой]
+      mods: [-го, -му, -го, --им, -м]
+
+    - gender: male
+      test: [гой]
       mods: [-го, -му, -го, --им, -м]
 
     - gender: male
@@ -189,7 +193,11 @@ lastname:
       mods: [--его, --ему, --его, -м, --ем]
 
     - gender: male
-      test: [кий, ый]
+      test: [ый]
+      mods: [--ого, --ому, --ого, -м, --ом]
+
+    - gender: male
+      test: [кий]
       mods: [--ого, --ому, --ого, -м, --ом]
 
     - gender: male
@@ -278,6 +286,10 @@ firstname:
     - gender: female
       test: [ия]
       mods: [-и, -и, -ю, -ей, -и]
+
+    - gender: female
+      test: [а]
+      mods: [-ы, -е, -у, -ой, -е]
 
     - gender: female
       test: [я]
