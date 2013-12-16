@@ -311,8 +311,8 @@ firstname:
       test: [б, в, г, д, ж, з, к, л, м, н, п, р, с, т, ф, х, ц, ч]
       mods: [а, у, а, ом, е]
 
-    - gender: male
-      test: [ния]
+    - gender: androgynous
+      test: [ния, рия, вия]
       mods: [-и, -и, -ю, -ем, -ем]
 
 middlename:
