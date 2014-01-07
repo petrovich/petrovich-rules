@@ -81,11 +81,7 @@ lastname:
       mods: [-ой, -ой, -ую, -ой, -ой]
 
     - gender: female
-      test: [цкая, ная, ая]
-      mods: [--ой, --ой, --ую, --ой, --ой]
-
-    - gender: female
-      test: [ская]
+      test: [цкая, ская, ная, ая]
       mods: [--ой, --ой, --ую, --ой, --ой]
 
     - gender: female
