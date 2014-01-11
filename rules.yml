@@ -86,7 +86,7 @@ lastname:
 
     - gender: female
       test: [яя]
-      mods: [--ой, --ой, --юю, --ой, --ой]
+      mods: [--ей, --ей, --юю, --ей, --ей]
 
     - gender: female
       test: [на]
