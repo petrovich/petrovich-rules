@@ -292,6 +292,14 @@ firstname:
       mods: [-и, -е, -ю, -ей, -е]
 
     - gender: male
+      test: [ия]
+      mods: [-и, -и, -ю, -ей, -и]
+
+    - gender: male
+      test: [я]
+      mods: [-и, -е, -ю, -ей, -е]
+
+    - gender: male
       test: [ей]
       mods: [-я, -ю, -я, -ем, -е]
 
