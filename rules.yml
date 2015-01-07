@@ -100,7 +100,7 @@ lastname:
       mods: [-ой, -ой, -у, -ой, -ой]
 
     - gender: androgynous
-      test: [га, ка, ха, ча, ща, жа]
+      test: [га, ка, ха, ча, ща, жа, ша]
       mods: [-и, -е, -у, -ой, -е]
 
     - gender: androgynous
