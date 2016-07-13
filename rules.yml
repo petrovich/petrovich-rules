@@ -256,7 +256,7 @@ firstname:
 
     - gender: female
       test: [а]
-      mods: [-ы, -е, -у, -ой, -е]
+      mods: [-и, -е, -у, -ой, -е]
 
     - gender: female
       test: [я]
