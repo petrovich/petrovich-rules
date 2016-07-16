@@ -4,12 +4,13 @@ branches:
   - v1
 language: ruby
 install:
-  - curl -L https://api.github.com/repos/petrovich/petrovich-ruby/tarball | tar zx
-  - ln -sf $TRAVIS_BUILD_DIR/petrovich-petrovich-ruby-* $TRAVIS_BUILD_DIR/petrovich-ruby
+  - cd $TRAVIS_BUILD_DIR/.. && curl -L https://api.github.com/repos/petrovich/petrovich-ruby/tarball | tar zx
+  - ln -sf $TRAVIS_BUILD_DIR/../petrovich-petrovich-ruby-* $TRAVIS_BUILD_DIR/../petrovich-ruby
 before_script:
-  - ln -sf $TRAVIS_BUILD_DIR/rules.{json,yml} $TRAVIS_BUILD_DIR/petrovich-ruby/rules/
-  - cd $TRAVIS_BUILD_DIR/petrovich-ruby && bundle --without development
+  - rm -rf $TRAVIS_BUILD_DIR/../petrovich-ruby/rules
+  - ln -sf $TRAVIS_BUILD_DIR $TRAVIS_BUILD_DIR/../petrovich-ruby/rules
+  - cd $TRAVIS_BUILD_DIR/../petrovich-ruby && bundle --without development
 script:
-  - cd $TRAVIS_BUILD_DIR/petrovich-ruby && rake evaluate
+  - cd $TRAVIS_BUILD_DIR/../petrovich-ruby && rake evaluate
 after_script:
-  - cat $TRAVIS_BUILD_DIR/petrovich-ruby/errors.tsv
+  - cat $TRAVIS_BUILD_DIR/../petrovich-ruby/errors.tsv
