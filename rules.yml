@@ -108,7 +108,7 @@ lastname:
     - gender: androgynous
       test: [га, ка, ха, ча, ща, жа, ша]
       mods: [-и, -е, -у, -ой, -е]
-	  
+
     # Глоба, Хакамада, Хамза, Бульба
     - gender: androgynous
       test: [а]
