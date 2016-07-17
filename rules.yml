@@ -36,10 +36,6 @@ lastname:
       test: [вий, сой, цой, хой]
       mods: [-я, -ю, -я, -ем, -е]
 
-    - gender: androgynous
-      test: [я]
-      mods: [., ., ., ., .]
-
   suffixes:
     - gender: female
       test: [б, в, г, д, ж, з, й, к, л, м, н, п, р, с, т, ф, х, ц, ч, ш, щ, ъ, ь]
