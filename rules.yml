@@ -1,7 +1,9 @@
+# Порядок имеет значение!
+# http://to-name.ru/surname/familnye-okonchania.htm
+# http://gramma.ru/SPR/?id=2.1
 lastname:
   exceptions:
     # Неизменяемые первые части двойных русских фамилий.
-    #
     - gender: androgynous
       test:
         - бонч
@@ -34,10 +36,6 @@ lastname:
       test: [вий, сой, цой, хой]
       mods: [-я, -ю, -я, -ем, -е]
 
-    - gender: androgynous
-      test: [я]
-      mods: [., ., ., ., .]
-
   suffixes:
     - gender: female
       test: [б, в, г, д, ж, з, й, к, л, м, н, п, р, с, т, ф, х, ц, ч, ш, щ, ъ, ь]
@@ -47,153 +45,166 @@ lastname:
       test: [гава, орота]
       mods: [., ., ., ., .]
 
+    # Брыльска, *
     - gender: female
       test: [ска, цка]
       mods: [-ой, -ой, -ую, -ой, -ой]
 
+    # Дубовицкая, Суперанская, Лесная, Барановская
     - gender: female
       test: [цкая, ская, ная, ая]
       mods: [--ой, --ой, --ую, --ой, --ой]
 
+    # Зимняя
     - gender: female
       test: [яя]
       mods: [--ей, --ей, --юю, --ей, --ей]
 
-    - gender: female
-      test: [на]
-      mods: [-ой, -ой, -у, -ой, -ой]
-
+    # *, Иллуй
     - gender: male
-      test: [иной]
+      test: [иной, уй]
       mods: [-я, -ю, -я, -ем, -е]
 
-    - gender: male
-      test: [уй]
-      mods: [-я, -ю, -я, -ем, -е]
-
+    # Ярица
     - gender: androgynous
       test: [ца]
       mods: [-ы, -е, -у, -ей, -е]
 
+    # Эрих
     - gender: male
       test: [рих]
       mods: [а, у, а, ом, е]
 
-    - gender: androgynous
-      test: [ия]
-      mods: [., ., ., ., .]
-
-    - gender: androgynous
-      test: [иа, аа, оа, уа, ыа, еа, юа, эа]
-      mods: [., ., ., ., .]
-
-    - gender: male
-      test: [их, ых]
-      mods: [., ., ., ., .]
-
-    - gender: androgynous
-      test: [о, е, э, и, ы, у, ю]
-      mods: [., ., ., ., .]
-
-    - gender: female
-      test: [ова, ева]
-      mods: [-ой, -ой, -у, -ой, -ой]
-
-    - gender: androgynous
-      test: [га, ка, ха, ча, ща, жа, ша]
-      mods: [-и, -е, -у, -ой, -е]
-
-    - gender: androgynous
-      test: [а]
-      mods: [-ы, -е, -у, -ой, -е]
-
-    - gender: male
-      test: [ь]
-      mods: [-я, -ю, -я, -ем, -е]
-
+    # Кантария
     - gender: androgynous
       test: [ия]
       mods: [-и, -и, -ю, -ей, -и]
 
+    # Гулиа, *, *, Джабуа, *, *, *, *
+    - gender: androgynous
+      test: [иа, аа, оа, уа, ыа, еа, юа, эа]
+      mods: [., ., ., ., .]
+
+    # Осипенко, *, Мегрэ, *, *, Хереску, *
+    - gender: androgynous
+      test: [о, е, э, и, ы, у, ю]
+      mods: [., ., ., ., .]
+
+    # Широких, Больных
+    - gender: male
+      test: [их, ых]
+      mods: [., ., ., ., .]
+
+    # Кузнецова, Голубева, Скурихина
+    - gender: female
+      test: [ова, ева, на]
+      mods: [-ой, -ой, -у, -ой, -ой]
+
+    # Басалыга, Лазука, Пидкуймуха, Бобча, Гуща, Рогожа, Кваша
+    - gender: androgynous
+      test: [га, ка, ха, ча, ща, жа, ша]
+      mods: [-и, -е, -у, -ой, -е]
+
+    # Глоба, Хакамада, Хамза, Бульба
+    - gender: androgynous
+      test: [а]
+      mods: [-ы, -е, -у, -ой, -е]
+
+    # Белоконь
+    - gender: male
+      test: [ь]
+      mods: [-я, -ю, -я, -ем, -е]
+
+    # Фидря
     - gender: androgynous
       test: [я]
       mods: [-и, -е, -ю, -ей, -е]
 
+    # Воробей
+    - gender: male
+      test: [обей]
+      mods: [--ья, --ью, --ья, --ьем, --ье]
+
+    # Кочубей
     - gender: male
       test: [ей]
       mods: [-я, -ю, -я, -ем, -е]
 
+    # Хачикян, Богдан, *
     - gender: male
       test: [ян, ан, йн]
       mods: [а, у, а, ом, е]
 
+    # Волынец, Горобец
     - gender: male
       test: [ынец, обец]
       mods: [--ца, --цу, --ца, --цем, --це]
 
+    # *, Быховец
+    # TODO: Проверить Брагинец
     - gender: male
       test: [онец, овец]
       mods: [--ца, --цу, --ца, --цом, --це]
 
+    # Порывай
     - gender: male
       test: [ай]
       mods: [-я, -ю, -я, -ем, -е]
 
+    # Дорогой, Руцкой
     - gender: male
-      test: [кой]
+      test: [гой, кой]
       mods: [-го, -му, -го, --им, -м]
 
-    - gender: male
-      test: [гой]
-      mods: [-го, -му, -го, --им, -м]
-
+    # Беpеговой
     - gender: male
       test: [ой]
       mods: [-го, -му, -го, --ым, -м]
 
+    # *, *
     - gender: male
       test: [ах, ив]
       mods: [а, у, а, ом, е]
 
+    # *, *, *, *
     - gender: male
       test: [ший, щий, жий, ний]
       mods: [--его, --ему, --его, -м, --ем]
 
     - gender: male
-      test: [ый]
+      test: [ый, кий]
       mods: [--ого, --ому, --ого, -м, --ом]
 
-    - gender: male
-      test: [кий]
-      mods: [--ого, --ому, --ого, -м, --ом]
-
+    # Хорунжий
     - gender: male
       test: [ий]
       mods: [-я, -ю, -я, -ем, -и]
 
+    # Починок
     - gender: male
       test: [ок]
       mods: [--ка, --ку, --ка, --ком, --ке]
 
+    # Кравец
     - gender: male
       test: [ец]
       mods: [--ца, --цу, --ца, --цом, --це]
 
+    # Лившиц, Концевич, Гармаш, Хрущ
     - gender: male
       test: [ц, ч, ш, щ]
       mods: [а, у, а, ем, е]
 
+    # Любен, Манн, Гордон, Прядун
     - gender: male
-      test: [ен, нн, он, ун]
+      test: [ен, нн, он, ун, б, г, д, ж, з, к, л, м, п, р, с, т, ф, х]
       mods: [а, у, а, ом, е]
 
+    # Петров, Левин
     - gender: male
       test: [в, н]
       mods: [а, у, а, ым, е]
 
-    - gender: male
-      test: [б, г, д, ж, з, к, л, м, п, р, с, т, ф, х]
-      mods: [а, у, а, ом, е]
 
 firstname:
   exceptions:
@@ -234,6 +245,7 @@ firstname:
       test: [ь]
       mods: [-и, -и, ., ю, -и]
 
+    # Олесь
     - gender: male
       test: [ь]
       mods: [-я, -ю, -я, -ем, -е]
@@ -242,6 +254,7 @@ firstname:
       test: [га, ка, ха, ча, ща, жа]
       mods: [-и, -е, -у, -ой, -е]
 
+    # Даша, Саша
     - gender: female
       test: [ша]
       mods: [-и, -е, -у, -ей, -е]
@@ -250,14 +263,17 @@ firstname:
       test: [а]
       mods: [-ы, -е, -у, -ой, -е]
 
+    # Зульфия
     - gender: female
       test: [ия]
       mods: [-и, -и, -ю, -ей, -и]
 
+    # Светлана
     - gender: female
       test: [а]
       mods: [-ы, -е, -у, -ой, -е]
 
+    # Юлия
     - gender: female
       test: [я]
       mods: [-и, -е, -ю, -ей, -е]
@@ -270,17 +286,15 @@ firstname:
       test: [я]
       mods: [-и, -е, -ю, -ей, -е]
 
+    # Андрей, *
     - gender: male
-      test: [ей]
+      test: [ей, й]
       mods: [-я, -ю, -я, -ем, -е]
 
+    # Афанасий
     - gender: male
       test: [ий]
       mods: [-я, -ю, -я, -ем, -и]
-
-    - gender: male
-      test: [й]
-      mods: [-я, -ю, -я, -ем, -е]
 
     - gender: male
       test: [б, в, г, д, ж, з, к, л, м, н, п, р, с, т, ф, х, ц, ч]
@@ -291,6 +305,13 @@ firstname:
       mods: [-и, -и, -ю, -ем, -ем]
 
 middlename:
+  exceptions:
+    - gender: androgynous
+      test:
+        - борух
+      mods: [., ., ., ., .]
+      tags: [first_word]
+
   suffixes:
     - gender: male
       test: [ич]
