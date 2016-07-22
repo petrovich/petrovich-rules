@@ -315,6 +315,10 @@ middlename:
 
   suffixes:
     - gender: male
+      test: [мич, ьич, кич]
+      mods: [а, у, а, ом, е]
+
+    - gender: male
       test: [ич]
       mods: [а, у, а, ем, е]
 
