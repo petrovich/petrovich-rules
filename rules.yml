@@ -230,16 +230,20 @@ firstname:
       mods: [., ., ., ., .]
 
     - gender: female
-      test: [рашель, нинель, николь, габриэль, даниэль]
-      mods: [., ., ., ., .]
+      test: [агидель, жизель, нинель, рашель, рахиль]
+      mods: [-и, -и, ., ю, -и]
 
   suffixes:
     - gender: androgynous
       test: [е, ё, и, о, у, ы, э, ю]
       mods: [., ., ., ., .]
 
+    - gender: male
+      test: [уа, иа]
+      mods: [., ., ., ., .]
+
     - gender: female
-      test: [б, в, г, д, ж, з, й, к, л, м, н, п, р, с, т, ф, х, ц, ч, ш, щ, ъ]
+      test: [б, в, г, д, ж, з, й, к, л, м, н, п, р, с, т, ф, х, ц, ч, ш, щ, ъ, иа, ль]
       mods: [., ., ., ., .]
 
     - gender: female
@@ -260,6 +264,11 @@ firstname:
       test: [ша]
       mods: [-и, -е, -у, -ей, -е]
 
+    # Даша, Саша
+    - gender: male
+      test: [ша, ча, жа]
+      mods: [-и, -е, -у, -ей, -е]
+
     - gender: androgynous
       test: [а]
       mods: [-ы, -е, -у, -ой, -е]
@@ -268,6 +277,16 @@ firstname:
     - gender: female
       test: [ия]
       mods: [-и, -и, -ю, -ей, -и]
+
+    # Майка
+    - gender: female
+      test: [ка, га, ха]
+      mods: [-и, -е, -у, -ой, -е]
+
+    # Марица
+    - gender: female
+      test: [ца]
+      mods: [-ы, -е, -у, -ей, -е]
 
     # Светлана
     - gender: female
@@ -287,15 +306,19 @@ firstname:
       test: [я]
       mods: [-и, -е, -ю, -ей, -е]
 
+    # Афанасий
+    - gender: male
+      test: [ий]
+      mods: [-я, -ю, -я, -ем, -и]
+
     # Андрей, *
     - gender: male
       test: [ей, й]
       mods: [-я, -ю, -я, -ем, -е]
 
-    # Афанасий
     - gender: male
-      test: [ий]
-      mods: [-я, -ю, -я, -ем, -и]
+      test: [ш, ж]
+      mods: [а, у, а, ем, е]
 
     - gender: male
       test: [б, в, г, д, ж, з, к, л, м, н, п, р, с, т, ф, х, ц, ч]
