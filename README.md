@@ -1,7 +1,7 @@
  Набор правил для склонения русских имён, фамилий и отчеств по падежам.
 =======================================================================
 
-[![Build Status](https://travis-ci.org/petrovich/petrovich-rules.svg?branch=v1)](https://travis-ci.org/petrovich/petrovich-rules)
+[![Build Status](https://travis-ci.org/petrovich/petrovich-rules.svg)](https://travis-ci.org/petrovich/petrovich-rules)
 
 Файл содержит 3 группы правил. Это __lastname__, __firstname__ и __middlename__. Каждая группа
 содержит подгруппы с правилами:
