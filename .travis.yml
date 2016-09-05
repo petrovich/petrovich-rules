@@ -1,7 +1,4 @@
 sudo: false
-branches:
-  only:
-  - v1
 language: ruby
 install:
   - cd $TRAVIS_BUILD_DIR/.. && curl -L https://api.github.com/repos/petrovich/petrovich-ruby/tarball | tar zx
