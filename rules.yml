@@ -296,7 +296,7 @@ firstname:
     # Светлана
     - gender: female
       test: [а]
-      mods: [-ы, -е, -у, -ой, -е]
+      mods: [-и, -е, -у, -ой, -е]
 
     # Юлия
     - gender: female
