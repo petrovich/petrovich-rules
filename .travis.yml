@@ -1,9 +1,9 @@
 sudo: false
 language: ruby
 install:
-  - cd $TRAVIS_BUILD_DIR/.. && curl -L https://api.github.com/repos/petrovich/petrovich-ruby/tarball | tar zx
+  - cd $TRAVIS_BUILD_DIR/.. && curl -L https://github.com/petrovich/petrovich-ruby/archive/master.tar.gz | tar zx
   - ln -sf $TRAVIS_BUILD_DIR/../petrovich-petrovich-ruby-* $TRAVIS_BUILD_DIR/../petrovich-ruby
-  - cd $TRAVIS_BUILD_DIR/.. && curl -L https://api.github.com/repos/petrovich/petrovich-eval/tarball | tar zx
+  - cd $TRAVIS_BUILD_DIR/.. && curl -L https://github.com/petrovich/petrovich-eval/archive/master.tar.gz | tar zx
   - ln -sf $TRAVIS_BUILD_DIR/../petrovich-petrovich-eval-* $TRAVIS_BUILD_DIR/../petrovich-eval
 before_script:
   - rm -rf $TRAVIS_BUILD_DIR/../petrovich-ruby/rules
