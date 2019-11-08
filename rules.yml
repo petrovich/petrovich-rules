@@ -190,6 +190,11 @@ lastname:
       test: [ок]
       mods: [--ка, --ку, --ка, --ком, --ке]
 
+    # Швец
+    - gender: male
+      test: [швец]
+      mods: [а, у, а, ем, е]
+
     # Коломиец
     - gender: male
       test: [иец, еец]
@@ -214,7 +219,6 @@ lastname:
     - gender: male
       test: [в, н]
       mods: [а, у, а, ым, е]
-
 
 firstname:
   exceptions:
