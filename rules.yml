@@ -243,6 +243,10 @@ firstname:
       mods: [-и, -е, -у, -ей, -е]
 
     - gender: male
+      test: [илья]
+      mods: [-и, -е, -ю, -ёй, -е]
+
+    - gender: male
       test: [шота]
       mods: [., ., ., ., .]
 
@@ -290,11 +294,6 @@ firstname:
       test: [а]
       mods: [-ы, -е, -у, -ой, -е]
 
-    # Зульфия
-    - gender: female
-      test: [ия]
-      mods: [-и, -и, -ю, -ей, -и]
-
     # Майка
     - gender: female
       test: [ка, га, ха]
@@ -310,16 +309,13 @@ firstname:
       test: [а]
       mods: [-ы, -е, -у, -ой, -е]
 
-    # Юлия
+    # Зульфия, Юлия
     - gender: female
-      test: [я]
-      mods: [-и, -е, -ю, -ей, -е]
-
-    - gender: male
       test: [ия]
       mods: [-и, -и, -ю, -ей, -и]
 
-    - gender: male
+    # Зоя, Майя, Добрыня
+    - gender: androgynous
       test: [я]
       mods: [-и, -е, -ю, -ей, -е]
 
