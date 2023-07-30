@@ -29,7 +29,7 @@ jobs:
         run: rake evaluate
       - name: Print errors.tsv
         run: cat errors.tsv
-      - name: 'Upload Artifact'
+      - name: Upload errors.tsv
         uses: actions/upload-artifact@v3
         with:
           name: errors
