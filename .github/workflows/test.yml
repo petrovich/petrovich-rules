@@ -12,13 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          repository: https://github.com/petrovich/petrovich-ruby
+          repository: petrovich/petrovich-ruby
       - uses: actions/checkout@v3
         with:
           path: rules
       - uses: actions/checkout@v3
         with:
-          repository: https://github.com/petrovich/petrovich-eval
+          repository: petrovich/petrovich-eval
           path: eval
       - name: Set up Ruby
         uses: actions/setup-ruby@v1
