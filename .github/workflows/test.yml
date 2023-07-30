@@ -25,12 +25,20 @@ jobs:
         with:
           ruby-version: ruby
           bundler-cache: true
-      - name: Evaluate
-        run: rake evaluate
-      - name: Print errors.tsv
-        run: cat errors.tsv
-      - name: Upload errors.tsv
+      - name: Evaluate rules on surnames
+        run: rake evaluate:rules[surnames] errors=surnames.errors.tsv
+      - name: Evaluate gender detector on surnames
+        run: rake evaluate:gender[surnames] errors=surnames.errors.gender.tsv
+      - name: Evaluate rules on first names
+        run: rake evaluate:rules[firstnames] errors=firstnames.errors.tsv
+      - name: Evaluate gender detector on first names
+        run: rake evaluate:gender[firstnames] errors=firstnames.errors.gender.tsv
+      - name: Evaluate rules on middle names
+        run: rake evaluate:rules[midnames] errors=midnames.errors.tsv
+      - name: Evaluate gender detector on middle names
+        run: rake evaluate:gender[midnames] errors=midnames.errors.gender.tsv
+      - name: Upload errors
         uses: actions/upload-artifact@v3
         with:
           name: errors
-          path: errors.tsv
+          path: *.errors.tsv
