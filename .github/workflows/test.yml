@@ -26,6 +26,11 @@ jobs:
           ruby-version: ruby
           bundler-cache: true
       - name: Evaluate
-        run: |
-          rake evaluate
-          cat errors.tsv
+        run: rake evaluate
+      - name: Print errors.tsv
+        run: cat errors.tsv
+      - name: 'Upload Artifact'
+        uses: actions/upload-artifact@v3
+        with:
+          name: errors
+          path: errors.tsv
