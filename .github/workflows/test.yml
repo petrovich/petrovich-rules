@@ -25,6 +25,10 @@ jobs:
         with:
           ruby-version: ruby
           bundler-cache: true
+      - name: Check the YAML and JSON equivalence
+        run: ./check.rb
+      - name: Show differences between YAML and JSON
+        run: diff -ua rules-yml.yml rules-json.yml
       - name: Evaluate rules on surnames
         run: rake evaluate:rules[surnames] errors=surnames.errors.tsv
       - name: Evaluate gender detector on surnames
