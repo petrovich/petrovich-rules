@@ -43,7 +43,7 @@ jobs:
         run: rake evaluate:gender[midnames] errors=midnames.errors.gender.tsv
       - name: Upload errors
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: errors
           path: "*.errors*.tsv"
