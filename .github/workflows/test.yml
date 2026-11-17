@@ -10,13 +10,13 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
         with:
           repository: petrovich/petrovich-ruby
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
         with:
           path: rules
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v7
         with:
           repository: petrovich/petrovich-eval
           path: eval
@@ -42,7 +42,9 @@ jobs:
       - name: Evaluate gender detector on middle names
         run: rake evaluate:gender[midnames] errors=midnames.errors.gender.tsv
       - name: Upload errors
-        uses: actions/upload-artifact@v3
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
           name: errors
           path: "*.errors*.tsv"
+          if-no-files-found: ignore
