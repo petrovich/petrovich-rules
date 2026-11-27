@@ -894,7 +894,7 @@
         ]
       }
     ],
-    "suffixes": [
+    "first_word": [
       {
         "gender": "androgynous",
         "test": [
@@ -926,7 +926,9 @@
         "tags": [
           "first_word"
         ]
-      },
+      }
+    ],
+    "suffixes": [
       {
         "gender": "androgynous",
         "test": [
